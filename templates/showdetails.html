@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+          background-color:DodgerBlue;
+        }
+        
+        h1 {
+          color: white;
+          margin-left: 40px;
+        }
+        
+        h2{
+            color: white;
+            margin-left: 40px;
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<body>
+    <center>
+        <h1>Welcome to Details page</h1>
+        <table border="5px">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Contact_Number</td>
+                    <td>Email</td>
+                    <td>Password</td>
+                    <td>Option</td>
+                    <td>Specific_Requirement</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in elist %}
+                <tr>
+                    <td>{{i[0]}}</td>
+                    <td>{{i[1]}}</td>
+                    <td>{{i[2]}}</td>
+                    <td>{{i[3]}}</td>
+                    <td>{{i[4]}}</td>
+                    <td>{{i[5]}}</td>
+                    <td><a href="/edit?email={{i[2]}}">Edit</a></td>
+                    <td><a href="/delete?email={{i[2]}}">Delete</a></td>
+                </tr>
+                {% endfor %}
+                <tr>
+                    <td><a href="/">Home</a></td>
+                    <td><a href="/reg">Enquiry</a></td>
+                    <td><a href="/log">Login</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>

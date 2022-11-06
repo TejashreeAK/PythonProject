@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: DodgerBlue;
+    }
+            
+    h1 {
+         color: white;
+        margin-left: 40px;
+    }
+    h2 {
+         color: white;
+         margin-left: 40px;
+    }
+    input[type=radio] {
+                        accent-color: green;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry</title>
+</head>
+<body>
+    <center>
+        <h1>Welcome to Enquiry page</h1>
+        <fieldset>
+            <h2> Please fill the below details.</h2>
+            <form action="/insert_data" method="post">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td>Contact_Number</td>
+                            <td><input type="number" name="phone"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" name="password"></td>
+                        </tr>
+                        <tr>
+                            <td>Enquiry_For</td>
+                            <td>
+                                <input type="radio" name="options" id="Digital_Marketing" value="Digital_Marketing">Digital_Marketing</input>
+                                <input type="radio" name="options" id="Outdoor_Advertising" value="Outdoor_Advertising">Outdoor_Advertising</input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Specific_Requirement</td>
+                            <td><input type="text" name="note"></td>
+                        </tr>
+                        
+                    </thead>
+                    <tr>
+                        <td><input type="submit" value="Submit"></td>
+                        <td><input type="reset" value="Refresh"></td>
+                    </tr>
+                </table>
+
+
+            </form>
+            <h3><a href="/">Home</a></h3>
+            <h3><a href="/log">Login</a></h3>
+        </fieldset>
+
+    <h2>Thank You for Visiting. We will get back to you soon</h2>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+          background-color:DodgerBlue;
+        
+        }
+        
+        h1 {
+          color: white;
+          margin-left: 40px;
+          margin-top:25px;
+        }
+        
+        h2{
+            color: white;
+            margin-left: 40px;
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit_Info</title>
+</head>
+<body>
+    <center>
+        <h1>Please edit the information below</h1>
+        <fieldset>
+            <form action="/insagain" method="post">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name" value="{{data[0]}}"></td>
+                        </tr>
+                        <tr>
+                            <td>Contact_Number</td>
+                            <td><input type="number" name="phone" value="{{data[1]}}"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email" name="email" value="{{data[2]}}"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" name="password" value="{{data[3]}}"></td>
+                        </tr>
+                        <tr>
+                            <td>Option</td>
+                            <td><input type="radio" name="options" value="{{data[4]}}">Digital_Marketing</td>
+                            <td><input type="radio" name="options" value="{{data[4]}}">Outdoor_Advertising</td>
+                        </tr>
+                        <tr>
+                            <td>Specific_Requirement</td>
+                            <td><input type="text" name="note" value="{{data[5]}}"></td>
+                        </tr>
+                         
+                    </thead>
+                    <tr>
+                        <td><input type="submit" value="submit"></td>
+                        <td><input type="reset" value="refresh"></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </center>
+</body>
+</html>
